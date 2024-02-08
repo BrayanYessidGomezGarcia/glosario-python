@@ -35,7 +35,9 @@
       "telefonoCelular": 314262,
       "telefonoFijo": 2727281
     },
-    "Estado": "inscrito"
+    "Estado": "inscrito",
+    "NotaTeorica": 60.0,
+    "NotaPractica": 70.0
   },
   {
     "IdentificacionCamper": 1556565626,
