@@ -1,7 +1,6 @@
 import listasCampus
 import Campers
 import mensajeError
-import os
 
 def NotasAsignadas():
     mostrar_campers= listasCampus.cargarCampers()
@@ -33,12 +32,12 @@ def NotasAsignadas():
         camper_seleccionado= campers_inscritos[seleccion-1]
         nota_teorica= float(input(f"Ingrese la Nota teorica para el estudiante {camper_seleccionado['NombreCamper']}: "))
         nota_practica= float(input(f"Ingrese la Nota practica para el estudiante {camper_seleccionado['NombreCamper']}: "))
-        promedio= (nota_teorica + nota_practica)/2 
+        promedio_filtro= (nota_teorica + nota_practica)/2 
 
-        if promedio >= 60:
-            print("Aprobado")
+        if promedio_filtro >= 60:
+            print("Filtro Aprobado")
         else:
-            print("Reprobado")
+            print("Filtro Reprobado")
 
 
         camper_seleccionado['NotaTeorica'] = nota_teorica
@@ -47,34 +46,71 @@ def NotasAsignadas():
         listasCampus.guardarCampers(mostrar_campers)    
 
 
-def agregarnotas():
-    while True:
-        try:
-            print("**AGREGAR NOTAS**")
-            print("1. Notas Actividades")
-            print("2. Notas filtro")
-            print("3. Notas Proyecto")
-            op = int(input("\t>>Escoja una opcion (1-3): "))
-            if op < 1 or op > 5:
-                    mensajeError.msgError("Error. Opcion Invalida (de 1 a 5)")
-                    continue
-            return op
-        
-        except ValueError:
-            mensajeError.msgError("Error. Opcion Invalida (de 1 a 5)")
-            continue
-
 def notasActividades():
-    os.system("cls") 
-    while True:
-        op= agregarnotas()
-        if op == 1:
-            os.system("cls")
-            for i in range(3):
-                notas= float(input("Ingrese las notas de las actividades: "))
-                while not notas:
-                    mensajeError.msgError("Error de notas ")
-                    notas= input("Ingrese las notas de las actividades: ")
+    mostrar_campers= listasCampus.cargarCampers()
+    campers_inscritos= [camper for camper in mostrar_campers
+                            if camper['Estado'].lower()=="inscrito"]
+    if not mostrar_campers:
+        print("No hay camper registrado. Por favor agregue uno")
+        Campers.agregarCamper()
+        return
+    
+    print("Lista de campers en estado de inscritos")
+    for i,camper in enumerate(campers_inscritos,start=1): 
+        print(f"{i}. {camper['NombreCamper']}")
+        
+        print("Ingrese las notas de las actividades: ")
+        nota1= float(input("Ingrese 1. Nota: "))
+        nota2= float(input("Ingrese 1. Nota: "))
+        nota3= float(input("Ingrese 1. Nota: "))
+        promedio_t= (nota1+nota2+nota3)/3
+
+        if promedio_t >= 60:
+            print("Notas en Actividades Aprobado")
+        else:
+            print("Notas en Actividades Reprobado")
+
+
+        print("Ingrese Nota del Quiz: ")
+        nota_filtro= float(input("Ingrese Nota: "))
+                
+        if nota_filtro >= 60:
+            print("Quiz Aprobado")
+        else:
+            print("Quiz Reprobado")
+        
+        
+           
+        print("Ingrese Nota del Proyecto: ")
+        nota_proyecto= float(input("Ingrese Nota: "))
+                    
+        if nota_proyecto >= 60:
+            print("Proyecto Aprobado")
+        else:
+            print("Proyecto Reprobado")
+
+        promedio= (promedio_t+nota_filtro+nota_proyecto)/3
+
+        if promedio >= 60:
+            print("Camper Aprobado")
+        else:
+            print("Camper Reprobado")
+
+
+
+def menu():
+    bandera=True 
+    while (bandera):
+        print("\t.1 Notas Filtro ")
+        print("\t.2 Notas Actividades  ")
+        opc = int(input("Ingrese una Opcion:"))
+        match(opc):
+             case 1: NotasAsignadas()
+             case 2: notasActividades()
+
+
+
+                
 
                 
 

@@ -4,6 +4,7 @@ CAMPERS_FILE = "camper.json"
 RUTAS_FILE = "rutas.json"
 HORARIO_FILE = "horario.json"
 TRAINERS_FILE= "trainers.json"
+NOTAS_FILE= "notas.json"
 
 def cargarCampers():
     try:
@@ -59,6 +60,20 @@ def cargarTrainers():
 def guardarTrainers(trainers): 
     with open(TRAINERS_FILE, 'w') as trainers_file:
         json.dump(trainers, trainers_file, indent=2 )
+
+
+def cargarNotas():
+    try: 
+        with open (NOTAS_FILE, 'r') as notas_file:
+            file= json.load(notas_file)
+
+    except FileNotFoundError:
+        file= []
+        return file
+    
+def guardarNotas(notas): 
+    with open (NOTAS_FILE, 'w') as notas_file:
+        json.dump(notas,notas_file, indent=2)
 
 
 

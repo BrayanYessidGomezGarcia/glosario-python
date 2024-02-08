@@ -15,7 +15,7 @@ def main():
             Campers.menuCamper()
         if op == 2:
             os.system("cls")
-            asignarNotas.NotasAsignadas()
+            asignarNotas.menu()
         if op ==3:
             os.system("cls")
             agregarRutas.rutasAgregadas()

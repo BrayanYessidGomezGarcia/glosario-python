@@ -10,8 +10,8 @@
       "telefonoFijo": null
     },
     "Estado": "inscrito",
-    "NotaTeorica": 1.0,
-    "NotaPractica": 1.0
+    "NotaTeorica": 50.0,
+    "NotaPractica": 70.0
   },
   {
     "IdentificacionCamper": 28897562,
@@ -23,7 +23,7 @@
       "telefonoCelular": 10586466,
       "telefonoFijo": 65482225
     },
-    "Estado": "d"
+    "Estado": "Inscrito"
   },
   {
     "IdentificacionCamper": 12348974,
@@ -49,6 +49,8 @@
       "telefonoCelular": 20202020,
       "telefonoFijo": 298879564
     },
-    "Estado": "activo"
+    "Estado": "Inscrito",
+    "NotaTeorica": 40.0,
+    "NotaPractica": 80.0
   }
 ]
