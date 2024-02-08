@@ -1,0 +1,52 @@
+[
+  {
+    "IdentificacionCamper": 5,
+    "NombreCamper": "Juan",
+    "ApellidoCamper": "Lozano",
+    "DireccionCamper": "xxxx",
+    "AcudienteCamper": "stella",
+    "TelContacto": {
+      "telefonoCelular": null,
+      "telefonoFijo": null
+    },
+    "Estado": "inscrito",
+    "NotaTeorica": 1.0,
+    "NotaPractica": 1.0
+  },
+  {
+    "IdentificacionCamper": 28897562,
+    "NombreCamper": "Carla",
+    "ApellidoCamper": "Perea",
+    "DireccionCamper": "xxx",
+    "AcudienteCamper": "Andrea",
+    "TelContacto": {
+      "telefonoCelular": 10586466,
+      "telefonoFijo": 65482225
+    },
+    "Estado": "d"
+  },
+  {
+    "IdentificacionCamper": 12348974,
+    "NombreCamper": "Juan",
+    "ApellidoCamper": "Lozano",
+    "DireccionCamper": "xxxx",
+    "AcudienteCamper": "stella",
+    "TelContacto": {
+      "telefonoCelular": 314262,
+      "telefonoFijo": 2727281
+    },
+    "Estado": "inscrito"
+  },
+  {
+    "IdentificacionCamper": 1556565626,
+    "NombreCamper": "Pablo",
+    "ApellidoCamper": "Perez",
+    "DireccionCamper": "Cr 24-58",
+    "AcudienteCamper": "Alvaro Perez",
+    "TelContacto": {
+      "telefonoCelular": 20202020,
+      "telefonoFijo": 298879564
+    },
+    "Estado": "activo"
+  }
+]
