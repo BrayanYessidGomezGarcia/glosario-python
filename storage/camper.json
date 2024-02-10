@@ -1,0 +1,28 @@
+[
+  {
+    "IdentificacionCamper": 1005109749,
+    "NombreCamper": "Brayan",
+    "ApellidoCamper": "Gomez",
+    "DireccionCamper": "Cll 15cn",
+    "AcudienteCamper": "Deisy",
+    "TelContacto": {
+      "telefonoCelular": 3202909351,
+      "telefonoFijo": 6409735
+    },
+    "Estado": "Activo"
+  },
+  {
+    "IdentificacionCamper": 2,
+    "NombreCamper": "juan",
+    "ApellidoCamper": "lozano",
+    "DireccionCamper": "xxxx",
+    "AcudienteCamper": "sss",
+    "TelContacto": {
+      "telefonoCelular": 27882782,
+      "telefonoFijo": 7282782
+    },
+    "Estado": "INscrito",
+    "NotaTeorica": 60.0,
+    "NotaPractica": 70.0
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "NombreRuta": "Python",
+    "Modulos": {
+      "NombreModulo": "Fundamentos",
+      "CodigoModulo": 2,
+      "Temas": {
+        "NombreTema": "python"
+      }
+    },
+    "CodigoRuta": 2
+  }
+]
