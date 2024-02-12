@@ -67,18 +67,18 @@
   },
   {
     "IdentificacionCamper": 1005109749,
-    "NombreCamper": "Brayan",
-    "ApellidoCamper": "Gomez Garcia",
-    "DireccionCamper": "cll15cn-Mz6",
-    "AcudienteCamper": {
-      "NombreAcudiente": "Deisy",
-      "IdAcudiente": 63553081
-    },
+    "NombreCamper": "Brayan ",
+    "ApellidoCamper": "Gomez",
+    "DireccionCamper": "xxx",
+    "AcudienteCamper": "Deisy",
     "TelContacto": {
-      "telefonoCelular": 3202909351,
-      "telefonoFijo": 6409735
+      "telefonoCelular": 3158920266,
+      "telefonoFijo": 6453223
     },
-    "Estado": "Activo"
+    "Estado": "aprobado",
+    "NotaTeorica": 60.0,
+    "NotaPractica": 70.0,
+    "RutaAsignada": "Python"
   },
   {
     "IdentificacionCamper": 256155155,

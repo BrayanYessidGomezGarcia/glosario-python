@@ -208,7 +208,7 @@ def buscarCamper():
                 f"Nombre del Acudiente: {camper['AcudienteCamper']['NombreAcudiente']}"
             )
             print(
-                f"Identificacion del Acudiente: {camper['AcudienteCamper']['idAcudiente']}"
+                f"Identificacion del Acudiente: {camper['AcudienteCamper']['IdAcudiente']}"
             )
             print(f"Celular: {camper['TelContacto']['telefonoCelular']}")
             print(f"Fijo: {camper['TelContacto']['telefonoFijo']}")
