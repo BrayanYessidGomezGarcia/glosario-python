@@ -1,6 +1,5 @@
 import mensajeError
 import listasCampus
-import json
 import os
 
 
