@@ -121,5 +121,20 @@
       "telefonoFijo": 66215
     },
     "Estado": "Activo"
+  },
+  {
+    "IdentificacionCamper": 1516252,
+    "NombreCamper": "Dana",
+    "ApellidoCamper": "Gomez",
+    "DireccionCamper": "xxx",
+    "AcudienteCamper": {
+      "NombreAcudiente": "Deisy Jazmin",
+      "idAcudiente": "15156562"
+    },
+    "TelContacto": {
+      "telefonoCelular": 3158920266,
+      "telefonoFijo": 61213626
+    },
+    "Estado": "Inscrito"
   }
 ]

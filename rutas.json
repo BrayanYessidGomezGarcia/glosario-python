@@ -9,5 +9,56 @@
       }
     },
     "CodigoRuta": 2
+  },
+  {
+    "CodigoRuta": 455,
+    "NombreRuta": "Java Script",
+    "Modulos": [
+      {
+        "CodigoModulo": 265,
+        "NombreModulo": "Fundamentos",
+        "Temas": [
+          {
+            "NombreTema": "Asignar"
+          },
+          {
+            "NombreTema": "Codificar"
+          },
+          {
+            "NombreTema": "Probar "
+          }
+        ]
+      },
+      {
+        "CodigoModulo": 232,
+        "NombreModulo": "Area",
+        "Temas": [
+          {
+            "NombreTema": "Scrip"
+          },
+          {
+            "NombreTema": "Hacer"
+          }
+        ]
+      },
+      {
+        "CodigoModulo": 262,
+        "NombreModulo": "Modificar",
+        "Temas": [
+          {
+            "NombreTema": "psint"
+          }
+        ]
+      },
+      {
+        "CodigoModulo": 512,
+        "NombreModulo": "Finalizar",
+        "Temas": [
+          {
+            "NombreTema": "Depurar"
+          }
+        ]
+      }
+    ]
   }
 ]
