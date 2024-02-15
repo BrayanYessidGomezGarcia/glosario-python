@@ -6,7 +6,7 @@ import mensajeError
 def NotasAsignadas():
     mostrar_campers = listasCampus.cargarCampers()
     campers_inscritos = [camper for camper in mostrar_campers
-                         if camper['Estado'].lower() == "inscrito"]
+        if camper['Estado'].lower() == "inscrito"]
     if not mostrar_campers:
         print("No hay camper registrado. Por favor agregue uno")
         Campers.agregarCamper()

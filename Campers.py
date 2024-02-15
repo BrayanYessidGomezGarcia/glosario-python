@@ -23,9 +23,7 @@ def menuCamper():
                 input("Presione enter para volver al menu")
             elif op == 2:
                 os.system("cls")
-                nombre_a_modificar = input(
-                    "Ingrese el nombre del camper que desea modificar: "
-                )
+                nombre_a_modificar =input("Ingrese el nombre del camper que desea modificar: ")
                 editarCamper(nombre_a_modificar)
                 input("Presione enter para volver al menu")
             elif op == 3:
@@ -71,21 +69,6 @@ def agregarCamper():
         mensajeError.msgError("El Apellido no puede estar vacio")
         apellido_camper = input("Ingrese Apellidos: ")
 
-    direccion_camper = input("Ingrese Direccion: ")
-    while not direccion_camper:
-        mensajeError.msgError("La direccion no puede estar vacia")
-        direccion_camper = input("Ingrese Direccion: ")
-
-    nombre_Acudiente = input("Ingrese Nombre de Acudiente: ")
-    while not nombre_Acudiente:
-        mensajeError.msgError("El nombre del acudiente no puede estar vacio")
-        nombre_Acudiente = input("Ingrese Nombre de Acudiente: ")
-
-    idAcudiente = input("Ingrese numero de Identificacion del Acudiente: ")
-    while not idAcudiente:
-        mensajeError.msgError("El nombre del acudiente no puede estar vacio")
-        idAcudiente = input("Ingrese Nombre de Acudiente: ")
-
     tel_celular = None
     while tel_celular is None:
         try:
@@ -109,11 +92,6 @@ def agregarCamper():
         "IdentificacionCamper": id_camper,
         "NombreCamper": nombre_camper,
         "ApellidoCamper": apellido_camper,
-        "DireccionCamper": direccion_camper,
-        "AcudienteCamper": {
-            "NombreAcudiente": nombre_Acudiente,
-            "idAcudiente": idAcudiente,
-        },
         "TelContacto": {"telefonoCelular": tel_celular, "telefonoFijo": tel_fijo},
         "Estado": estado,
     }
@@ -151,16 +129,6 @@ def editarCamper(nombre_a_modificar):
                 mensajeError.msgError("El Apellido no puede estar vacio")
                 camper["ApellidoCamper"] = input("Nuevo apellido")
 
-            camper["DireccionCamper"] = input("Nueva direccion: ")
-            while not camper["DireccionCamper"]:
-                mensajeError.msgError("La direccion no puede estar vacia")
-                camper["DireccionCamper"] = input("Nueva direccion")
-
-            camper["AcudienteCamper"] = input("Nuevo nombre de acudiente: ")
-            while not camper["AcudienteCamper"]:
-                mensajeError.msgError("El acudiente no puede estar vacio")
-                camper["AcudienteCamper"] = input("Nuevo acudiente ")
-
             tel_celular = None
             while tel_celular is None:
                 try:
@@ -176,12 +144,6 @@ def editarCamper(nombre_a_modificar):
                 except ValueError:
                     mensajeError.msgError("Telefono de contacto Invalido")
             camper["TelContacto"]["telefonoFijo"] = tel_fijo
-
-            camper["Estado"] = input("Nuevo estado: ")
-            while not camper["Estado"]:
-                mensajeError.msgError("El estado no puede estar vacio")
-                camper["Estado"] = input("Nuevo estado")
-            encontrado = True
             break
 
     if encontrado:
@@ -210,10 +172,6 @@ def buscarCamper():
             print(
                 f"Identificacion del Acudiente: {camper['AcudienteCamper']['IdAcudiente']}"
             )
-            print(f"Celular: {camper['TelContacto']['telefonoCelular']}")
-            print(f"Fijo: {camper['TelContacto']['telefonoFijo']}")
-            print(f"Estado: {camper['Estado']}")
-            print()
     if not encontrado:
         print("Camper no encontrado.")
 
@@ -238,12 +196,6 @@ def eliminarCamper():
             print(
                 f"Nombre del Acudiente: {camper['AcudienteCamper']['NombreAcudiente']}"
             )
-            print(
-                f"Identificacion del Acudiente: {camper['AcudienteCamper']['IdAcudiente']}"
-            )
-            print(f"Celular: {camper['TelContacto']['telefonoCelular']}")
-            print(f"Fijo: {camper['TelContacto']['telefonoFijo']}")
-            print(f"Estado: {camper['Estado']}")
             print()
             confirmacion = input(
                 "¿Está seguro de que desea eliminar este camper? (s/n): "

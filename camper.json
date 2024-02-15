@@ -12,9 +12,10 @@
       "telefonoCelular": 65456289,
       "telefonoFijo": null
     },
-    "Estado": "inscrito",
+    "Estado": "Inscrito",
     "NotaTeorica": 50.0,
-    "NotaPractica": 70.0
+    "NotaPractica": 70.0,
+    "RutaAsignada": "Python"
   },
   {
     "IdentificacionCamper": 28897562,
@@ -29,7 +30,10 @@
       "telefonoCelular": 10586466,
       "telefonoFijo": 65482225
     },
-    "Estado": "Inscrito"
+    "Estado": "Inscrito",
+    "NotaTeorica":80.0,
+    "NotaPractica": 20.0,
+    "RutaAsignada": "Javascript"
   },
   {
     "IdentificacionCamper": 12348974,
@@ -44,9 +48,10 @@
       "telefonoCelular": 314262,
       "telefonoFijo": 2727281
     },
-    "Estado": "inscrito",
+    "Estado": "Inscrito",
     "NotaTeorica": 60.0,
-    "NotaPractica": 70.0
+    "NotaPractica": 70.0,
+    "RutaAsignada": "Java"
   },
   {
     "IdentificacionCamper": 1556565626,
@@ -61,9 +66,10 @@
       "telefonoCelular": 20202020,
       "telefonoFijo": 298879564
     },
-    "Estado": "Activo",
+    "Estado": "Inscrito",
     "NotaTeorica": 40.0,
-    "NotaPractica": 80.0
+    "NotaPractica": 80.0,
+    "RutaAsignada":"Python"
   },
   {
     "IdentificacionCamper": 1005109749,
@@ -75,7 +81,7 @@
       "telefonoCelular": 3158920266,
       "telefonoFijo": 6453223
     },
-    "Estado": "aprobado",
+    "Estado": "Inscrito",
     "NotaTeorica": 60.0,
     "NotaPractica": 70.0,
     "RutaAsignada": "Python"
@@ -90,7 +96,10 @@
       "telefonoCelular": 251515,
       "telefonoFijo": 323223
     },
-    "Estado": "Activo"
+    "Estado": "Inscrito",
+    "NotaTeorica": 10.0,
+    "NotaPractica": 70.0,
+    "RutaAsignada": "Javascript"
   },
   {
     "IdentificacionCamper": 2562556,
@@ -105,7 +114,10 @@
       "telefonoCelular": 251165,
       "telefonoFijo": 15551
     },
-    "Estado": "Activo"
+    "Estado": "Inscrito",
+    "NotaTeorica": 10.0,
+    "NotaPractica": 70.0,
+    "RutaAsignada": "Java"
   },
   {
     "IdentificacionCamper": 1616115,
@@ -120,7 +132,10 @@
       "telefonoCelular": 32165165,
       "telefonoFijo": 66215
     },
-    "Estado": "Activo"
+    "Estado": "Inscrito",
+    "NotaTeorica": 90.0,
+    "NotaPractica": 70.0,
+    "RutaAsignada": "Python"
   },
   {
     "IdentificacionCamper": 1516252,
@@ -135,6 +150,9 @@
       "telefonoCelular": 3158920266,
       "telefonoFijo": 61213626
     },
-    "Estado": "Inscrito"
+    "Estado": "Inscrito",
+    "NotaTeorica": 100.0,
+    "NotaPractica": 70.0,
+    "RutaAsignada": "Python"
   }
 ]
